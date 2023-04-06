@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce |  Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="TUSHAR.png" width="80px"></a>
+        </div>
+
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Servcies</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="Register.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="contact_container">
+        <h2>Contact Us</h2>
+        <div class="g_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.7564503950384!2d77.74498431488082!3d20.881864686078128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a52cf3db0cc7%3A0x68088c517ec9dc77!2sSipna%20College%20Of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1661073837179!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact_content">
+            <p><b>Address: Amravati, Maharashtra, India</b></p>
+            <p><b>Call: +91 9100000555</b></p>
+            <p><b>Mail: tpawades9@gmail.com</b></p>
+        </div>
+    </div>
+
+
+    <div class="feed">
+        <h2>write a review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="sam1.jpg" width="150px"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a  href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="bolg.html">Blogs</a>|
+            <a href="login.html">Login</a>|
+            <a href="sign up.html">Sign Up</a>|
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href=" ">Privacy Policy</a>|
+            <a href="70.pdf.pdf">Terms of Use</a>|
+            <a href=" ">Refund Policy</a>|
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/tushar.pawade.562" target="_black"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tushar___49/" target="_black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/in/tushar-pawade-63a569234?trk=people-guest_people_search-card" target="_black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/TusharPawade7 " target="_black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contacts" style="padding-bottom: 30px;">
+            <h3>Contacts Us</h3>
+            <a href="tel: +919655678587 "><i class="fa fa-mobile" aria-hidden="true"></i></a>
+            <a href="mailto: tpawades9@gmail.com "><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://api.WhatsApp.com/send?phone=+919655678587" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p >Copyright &copy; 2022 TUSHAR All rights reserved</p>
+    </footer>
+    
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdZur3bo3JFueeHGMCrj4S0jOavfvi4ZYsFnnN2UhsDEOsjPkYlaxXrp6tHwThQObTyw/execs'
+                const form = document.forms['submit-googlesheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thank you..! Will get back to you soon..."))
+                    .catch(error => console.error('Error!', error.message))
+                })
+    </script>
+    </body>
+    </html>
